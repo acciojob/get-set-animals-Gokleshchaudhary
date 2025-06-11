@@ -34,4 +34,9 @@ myCat.purr();      // Expected Output: purr
 
 const myDog = new Dog("Golden Retriever");
 myDog.makeSound(); // Expected Output: The Golden Retriever makes a sound
-myDog.bark();   
+myDog.bark();      // Expected Output: woof
+
+// Exporting classes for Cypress tests
+window.Animal = Animal;
+window.Dog = Dog;
+window.Cat = Cat;
